@@ -7,3 +7,5 @@ Color order: White -> Black -> Red -> Green -> Blue -> White
 - `Touch`
 ## Close with
 - `Escape`
+
+## Inspired by [lcdtech's dead pixel check](https://lcdtech.info/en/tests/dead.pixel.htm)
