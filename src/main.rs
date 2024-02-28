@@ -16,14 +16,18 @@ fn any_input() -> bool {
 }
 
 fn cycle_color(color: &mut Color) {
+    const PURE_RED: Color = Color::new(1.0, 0.0, 0.0, 1.0);
+    const PURE_GREEN: Color = Color::new(0.0, 1.0, 0.0, 1.0);
+    const PURE_BLUE: Color = Color::new(0.0, 0.0, 1.0, 1.0);
+
     *color = if *color == WHITE {
         BLACK
     } else if *color == BLACK {
-        RED
-    } else if *color == RED {
-        GREEN
-    } else if *color == GREEN {
-        BLUE
+        PURE_RED
+    } else if *color == PURE_RED {
+        PURE_GREEN
+    } else if *color == PURE_GREEN {
+        PURE_BLUE
     } else {
         WHITE
     };
