@@ -5,3 +5,9 @@ edition = "2021"
 
 [dependencies]
 macroquad = "0.4.5"
+
+[dev-dependencies]
+color-eyre = "0.6.2"
+axum = { version = "0.7.4", features = ["macros"] }
+tokio = { version = "1.36.0", features = ["full"] }
+tower-http = { version = "0.5.2", features = ["fs"] }
