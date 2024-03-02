@@ -9,11 +9,11 @@ async fn main() -> Result<(), Report> {
     build_wasm().await?;
     
     let listener = TcpListener::bind("[::1]:8080").await?;
-    let router = Router::new().nest_service("/", ServeFile::new("examples/web/assets/index.html"));
+    let router = Router::new().nest_service("/", ServeFile::new("examples/web/index.html"));
 
     println!("serving on http://localhost:8080/index.html");
     axum::serve(listener, router).await?;
-    
+
     return Ok(());
 }
 
