@@ -10,7 +10,9 @@ fn configuration() -> Conf {
 
 fn any_input() -> bool {
     let any_key_pressed = get_keys_pressed().len() > 0;
-    let any_mouse_button_pressed = is_mouse_button_pressed(MouseButton::Left) || is_mouse_button_pressed(MouseButton::Middle) || is_mouse_button_pressed(MouseButton::Right);
+    let any_mouse_button_pressed = is_mouse_button_pressed(MouseButton::Left)
+        || is_mouse_button_pressed(MouseButton::Middle)
+        || is_mouse_button_pressed(MouseButton::Right);
     let any_touches = touches().len() > 0;
     return any_key_pressed || any_mouse_button_pressed || any_touches;
 }
