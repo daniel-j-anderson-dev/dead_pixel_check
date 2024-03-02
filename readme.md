@@ -10,7 +10,8 @@ Color order: White -> Black -> Red -> Green -> Blue -> White
 - `Escape`
 
 # Examples
-- Spin up a web server that hosts the app's WASM binary. run: `cargo --example web`
+- Run on native: `cargo run`
+- Spin up a web server that hosts the app's WASM binary: `cargo --example web`
   - Note: to add wasm32-unknown-unknown target run `rustup target add wasm32-unknown-unknown`
 
 The index.html in the examples/web folder should work with any macroquad WASM binary
